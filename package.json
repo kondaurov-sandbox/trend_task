@@ -1,0 +1,26 @@
+{
+  "name": "trend_task",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "do-publish": "tsc && rm -rf dist && mkdir -p dist && cp -r target/src/* dist && cp package.json dist && cd dist && npm publish"
+  },
+  "author": "Kondaurov Alexander",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.19",
+    "@types/pg": "^6.1.43",
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "pg": "^7.0.2"
+  },
+  "publishConfig": { "registry": "https://api.bintray.com/npm/kondaurovdev/npm" }
+}
