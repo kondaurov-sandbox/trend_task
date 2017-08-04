@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.0.2",
+    "@types/es6-promise": "0.0.32",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.19",
     "@types/pg": "^6.1.43",
@@ -22,5 +23,7 @@
   "dependencies": {
     "pg": "^7.0.2"
   },
-  "publishConfig": { "registry": "https://api.bintray.com/npm/kondaurovdev/npm" }
+  "publishConfig": {
+    "registry": "https://api.bintray.com/npm/kondaurovdev/npm"
+  }
 }
